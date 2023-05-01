@@ -32,3 +32,8 @@ php -v
 # Check XAMPP version/status
 echo -e "\n### XAMPP/LAMPP VERSION ###"
 sudo /opt/lampp/lampp status
+
+# Wait for user input to finish program, and clear output
+echo -e "\n\n"
+read -p "Press any key to continue... " -n1 -s
+printf "\033c"
